@@ -3862,7 +3862,20 @@
             "source": [
                 "var dogNames = [\"Max\",\"Fido\",\"Gizmo\",\"Nala\"]\n\n//Test Cases\nvar testString1 = \"Hello, my dog is Max, and they have purple eyes!\"\n//Expect ['Max']\n\nvar testString2 = \"My Dog is fast, her name is Tippi\"\n//Expect []\n\nvar testString3 = \"Come here Fido and Gizmo come here\"\n//Expect['Fido','Gizmo']\n\n\nfunction findDogNames(sentence, dogNames) {\n    return dogNames.filter(dogName => sentence.includes(dogName));\n}\n\nconsole.log(findDogNames(testString1, dogNames))\n\nconsole.log(findDogNames(testString2, dogNames))\n\nconsole.log(findDogNames(testString3, dogNames))"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[ 'Max' ]",
+                                "[ 'Fido', 'Gizmo' ]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
@@ -3883,7 +3896,27 @@
             "source": [
                 "var heightsInInches = [66, 64, 60, 52, 72, 80, 51]\n// Expect\n// [\n//   5.5,\n//   5.333333333333333,\n//   5,\n//   4.333333333333333,\n//   6,\n//   6.666666666666667,\n//   4.25\n// ]\n\n\nfunction inchesToFeet(heightsInInches) {\n    return heightsInInches.map(height => height / 12);\n}\nvar heightsInFeet = inchesToFeet(heightsInInches);\n\nconsole.log(heightsInFeet);"
             ],
-            "outputs": []
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "[",
+                                "  5.5,",
+                                "  5.333333333333333,",
+                                "  5,",
+                                "  4.333333333333333,",
+                                "  6,",
+                                "  6.666666666666667,",
+                                "  4.25",
+                                "]",
+                                ""
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
             "language": "markdown",
@@ -3991,7 +4024,7 @@
         {
             "language": "javascript",
             "source": [
-                "//bingo value is\n\n//ognib value is\n\n// i value is\n"
+                "//bingo value is \"B-I-N-G-O\"\n\n//ognib value is \"O-G\"\n\n// i value is 8\n"
             ],
             "outputs": []
         },
